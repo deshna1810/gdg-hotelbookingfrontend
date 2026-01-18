@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom"
+import Landing from "./pages/Landing"
+import Hotels from "./pages/Hotels"
+import HotelDetails from "./pages/HotelDetails"
+import Wishlist from "./pages/Wishlist"
+import Booking from "./pages/Booking"
+import BookingConfirmation from "./pages/BookingConfirmation"
+import Login from "./pages/Login"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/hotels" element={<Hotels />} />
+      <Route path="/hotels/:id" element={<HotelDetails />} />
+      <Route path="/wishlist" element={<Wishlist />} />
+      <Route path="/booking/:id" element={<Booking />} />
+      <Route path="/confirmation" element={<BookingConfirmation />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   )
 }
-
-export default App

@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "name": "Minimal Suite",
+        "city": "Jaipur",
+        "pricePerNight": 4200,
+        "rating": 4.6,
+        "image": "/rooms/room1.jpg",
+        "amenities": [
+            "wifi",
+            "pool",
+            "ac"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Coastal Retreat",
+        "city": "Goa",
+        "pricePerNight": 6800,
+        "rating": 4.8,
+        "image": "/rooms/room2.jpg",
+        "amenities": [
+            "wifi",
+            "pool"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Urban Loft",
+        "city": "Mumbai",
+        "pricePerNight": 5100,
+        "rating": 4.4,
+        "image": "/rooms/room3.jpg",
+        "amenities": [
+            "wifi",
+            "parking",
+            "ac"
+        ]
+    }
+]
